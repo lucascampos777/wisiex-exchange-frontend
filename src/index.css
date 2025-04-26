@@ -13,3 +13,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.user-hover {
+  padding: 3px 10px;
+  border-radius: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.user-hover:hover {
+  background-color: #e0dcc9a1; /* light gold on hover */
+  cursor: pointer;
+}
+
+.user-hover:active {
+  background-color: #b8b4a5c4; /* light gold on hover */
+  cursor: pointer;
+}

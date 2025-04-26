@@ -18,10 +18,7 @@ Back-end
 Your application should consist in two pages: authentication and orders.
 
 1. Authentication
-Only the user name should be provided. Such a username is then registered (it not existing
-already). Each registered user starts with 100 BTC and 100000 USD. You should generate a
-JWT taken for keeping the authentication session (we suggest using HTTP Bearer
-authentication).
+Only the user name should be provided. Such a username is then registered (it not existing already). Each registered user starts with 100 BTC and 100000 USD. You should generate a JWT taken for keeping the authentication session (we suggest using HTTP Bearer authentication).
 
 After the login, it should redirect to your second page:
 
