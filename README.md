@@ -2,6 +2,8 @@
 
 This is the **frontend application** of the **Wisiex Exchange** project, as a trial task from **Wisiex** company.
 
+![Description of image](https://raw.githubusercontent.com/lucascampos777/wisiex-exchange-frontend/refs/heads/master/public/image.png?token=GHSAT0AAAAAADC4FUBGJ645LFACCZMB4XKM2ANPLWA)
+
 Built with:
 - React 19 (CRA)
 - Bulma CSS
