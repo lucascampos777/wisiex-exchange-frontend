@@ -2,7 +2,7 @@
 
 This is the **frontend application** of the **Wisiex Exchange** project, as a trial task from **Wisiex** company.
 
-![Description of image](https://raw.githubusercontent.com/lucascampos777/wisiex-exchange-frontend/refs/heads/master/public/image.png?token=GHSAT0AAAAAADC4FUBGJ645LFACCZMB4XKM2ANPLWA)
+![Description of image](https://github.com/lucascampos777/lucascampos777/blob/main/snapshot_wisiex_exchange_1.png)
 
 Built with:
 - React 19 (CRA)
