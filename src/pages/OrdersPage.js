@@ -10,6 +10,12 @@ import { GlobalMatches } from '../components/GlobalMatches';
 import { MyHistory } from '../components/MyHistory';
 import { OrderBook } from '../components/OrderBook';
 
+import { io } from 'socket.io-client';
+
+const socket = io(process.env.REACT_APP_API_URL, {
+    transports: ['websocket']
+});
+
 const OrdersPage = () => {
     const [matches, setMatches] = useState([])
     const [loadingMatches, setLoadingMatches] = useState(true)
@@ -75,7 +81,19 @@ const OrdersPage = () => {
     }
 
     useEffect(() => {
+        socket.on('connect', () => {
+          console.log('[Socket.IO] Connected to server');
+        });
+        socket.on('connect_error', (error) => {
+          console.error('[Socket.IO] Connection error:', error);
+        });
+        socket.on('updated', () => {
+            refreshData();
+        })
         refreshData();
+        return () => {
+            socket.off('updated')
+        }
     }, [])
 
     return (
@@ -89,7 +107,7 @@ const OrdersPage = () => {
 
                     <div className="column is-4">
                         <GlobalMatches matches={matches} loading={loadingMatches} />
-                        <MyHistory matches={myMatches} loading={loadingMyMatches} />
+                        <OrderBook bids={bids} asks={asks} loading={loadingOrderBook} />
                     </div>
 
                     <div className="column is-4">
@@ -104,8 +122,8 @@ const OrdersPage = () => {
                     </div>
 
                     <div className="column is-4">
-                        <OrderBook bids={bids} asks={asks} loading={loadingOrderBook}/>
-                        <ActiveOrders orders={activeOrders} loading={loadingActiveOrders} refreshData={refreshData}/>
+                        <MyHistory matches={myMatches} loading={loadingMyMatches} />
+                        <ActiveOrders orders={activeOrders} loading={loadingActiveOrders} refreshData={refreshData} />
                     </div>
 
                 </div>

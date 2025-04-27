@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useAuth } from '../contexts/authContext';
 import { toast } from 'react-toastify';
 
 export const SellCard = ({ refreshData }) => {
-    const { token } = useAuth();
     const [amount, setAmount] = useState('');
     const [price, setPrice] = useState('');
 

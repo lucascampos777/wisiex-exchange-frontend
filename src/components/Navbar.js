@@ -16,6 +16,7 @@ export const Navbar = () => {
     return (
         <nav className="navbar has-background-light mb-5" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
+                <img src="logo.png" alt="logo" className="image is-64x64"/>
                 <a className="navbar-item" href="/">
                     <strong>Wisiex Exchange</strong>
                 </a>
@@ -23,8 +24,8 @@ export const Navbar = () => {
 
             <div className="navbar-end">
                 <div className="navbar-item">
-                    <div class={`dropdown ${menuOpen && "is-active"}`}>
-                        <div class="dropdown-trigger">
+                    <div className={`dropdown ${menuOpen && "is-active"}`}>
+                        <div className="dropdown-trigger">
                             <div className="is-flex is-align-items-center user-hover" onClick={triggerMenu}>
                                 <figure className="image is-32x32 mr-2">
                                     <img
@@ -36,9 +37,9 @@ export const Navbar = () => {
                                 <span><strong>{auth.user}</strong></span>
                             </div>
                         </div>
-                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                            <div class="dropdown-content">
-                                <a class="dropdown-item" onClick={logout}> Logout </a>
+                        <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                            <div className="dropdown-content">
+                                <a className="dropdown-item" onClick={logout}> Logout </a>
                             </div>
                         </div>
                     </div>

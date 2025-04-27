@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import { useAuth } from "../contexts/authContext"
 import axios from "axios";
-import { toast } from "react-toastify";
 
 export const Statistics = () => {
     const [data, setData] = useState({})
@@ -15,7 +13,7 @@ export const Statistics = () => {
     }, [])
 
     return (
-        <div className="box has-background-light mb-6">
+        <div className="box has-background- mb-6">
             <nav className="level">
                 <div className="level-item has-text-centered">
                     <div>

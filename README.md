@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Wisiex Exchange - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the **frontend application** of the **Wisiex Exchange** project, as a trial task from **Wisiex** company.
 
-## Available Scripts
+Built with:
+- React 19 (CRA)
+- Bulma CSS
+- Socket.IO
+- React Router
+- Context API
 
-In the project directory, you can run:
+## Features
+- User authentication with JWT
+- Place Buy/Sell orders
+- View active orders
+- View global match history
+- View personal trade history
+- View order book (Bid/Ask)
+- Clean UI inspired by real crypto exchanges
 
-### `npm start`
+## How to Run Frontend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Clone Repository
+```bash
+git clone https://github.com/lucascampos777/wisiex-exchange-frontend.git
+cd wisiexchange-frontend
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Install Required Environement
+Node 23.10.0 is required.
 
-### `npm test`
+### 3. Install dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+### 4. Start the development server
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Frontend will be available at http://localhost:3000.  
+Make sure the backend server is running at http://localhost:5000 by default.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Test
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Start backend server (`npm start` inside backend).
+2. Start frontend server (`npm start` here).
+3. Open `http://localhost:3000`.
+4. Login with any username.
+5. Place Buy/Sell orders.
+6. Watch live updates across Order Book, Matches, Statistics.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+### Developed by **Lucas Campos** as a trial task
+GitHub - [lucascampos777](https://github.com/lucascampos777)  
+LinkedIn - [lucas-campos-916177348](https://linkedin.com/in/lucas-campos-916177348)
